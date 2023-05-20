@@ -11,14 +11,29 @@ import javax.swing.JOptionPane;
  * @author fabia
  */
 public class Palindrome {
-    
-    public static String pb, texto, palabra, palabrab;
-    public static void main(String[] args) 
-    {
-     palabra=JOptionPane.showInputDialog("Ingresa una palabra: ");
-     for (int i = 0; i < palabra.length(); i++)
-     {
+
+    public static void main(String[] args) {
+
+        String texto = JOptionPane.showInputDialog("Humano!!! escribe un palindromo");
+        int longitud = texto.length();
+        char[] letras = new char[longitud];
+        char[] letrasInv = new char[longitud];
+        int inverso = longitud;
+        boolean igual = true;
+        for(int i = 0; i < longitud; i++) {
+                letrasInv[i] = texto.toLowerCase().charAt(inverso - 1);
+                inverso--;
+                letras[i] = texto.toLowerCase().charAt(i);
+                if (letrasInv[i] != letras[i]) {
+                    igual = false;
+                    break;
+                }
+            }
+            if (igual == false) {
+                System.out.println(" no es un palindromo");
+            }else{
+            System.out.println(" SI es un palindromo");
+        }
+
      }
-     }
-        
-}
+    }
