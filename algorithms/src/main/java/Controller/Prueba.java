@@ -8,6 +8,6 @@ package Controller;
  *
  * @author fabia
  */
-public class FizzBuzz {
+public class Prueba {
    
 }

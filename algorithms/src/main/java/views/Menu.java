@@ -4,6 +4,8 @@
  */
 package views;
 
+import Controller.Palindrome;
+
 /**
  *
  * @author fabia
@@ -28,7 +30,7 @@ public class Menu extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        items = new javax.swing.JComboBox<>();
         access = new javax.swing.JButton();
         close = new javax.swing.JButton();
 
@@ -39,8 +41,8 @@ public class Menu extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Calibri", 0, 36)); // NOI18N
         jLabel1.setText("Algrithms");
 
-        jComboBox1.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FizzBuzz", "Fibonacci", "Palindrome", "BubbleSort" }));
+        items.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
+        items.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FizzBuzz", "Fibonacci", "Palindrome", "BubbleSort" }));
 
         access.setBackground(new java.awt.Color(0, 195, 115));
         access.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
@@ -73,7 +75,7 @@ public class Menu extends javax.swing.JFrame {
                         .addGap(69, 69, 69)
                         .addComponent(close))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(items, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel1Layout.createSequentialGroup()
                             .addGap(27, 27, 27)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -85,7 +87,7 @@ public class Menu extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addComponent(jLabel1)
                 .addGap(26, 26, 26)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(items, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(access)
@@ -108,7 +110,27 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void accessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accessActionPerformed
-        // TODO add your handling code here:
+       String type = items.getSelectedItem().toString();
+        
+       switch (type) {
+           case "FizzBuzz":
+             System.out.println("hola mundo FizzBuzz");
+           /* this.dispose();
+            Moneda mon = new Moneda();
+            mon.setVisible(true);
+            mon.setLocationRelativeTo(null);
+            mon.setResizable(false);
+            break;*/
+            break;
+            
+           case "Palindrome":
+               System.out.println("hola mundo palindrome");
+               Palindrome pal = new Palindrome();
+               pal.palindromellamar();
+               
+           break;
+           
+       }
     }//GEN-LAST:event_accessActionPerformed
 
     private void closeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeActionPerformed
@@ -153,7 +175,7 @@ public class Menu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton access;
     private javax.swing.JButton close;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> items;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

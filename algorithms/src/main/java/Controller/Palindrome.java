@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class Palindrome {
 
-    public static void main(String[] args) {
+    public void palindromellamar(){
 
         String texto = JOptionPane.showInputDialog("Humano!!! escribe un palindromo");
         int longitud = texto.length();
@@ -30,10 +30,11 @@ public class Palindrome {
                 }
             }
             if (igual == false) {
-                System.out.println(" no es un palindromo");
+                JOptionPane.showMessageDialog(null, "La palabra: "+ texto + ", NO es un palindromo");
             }else{
-            System.out.println(" SI es un palindromo");
+                JOptionPane.showMessageDialog(null, "La palabra: "+ texto + ", SI es un palindromo");
         }
 
      }
+    
     }

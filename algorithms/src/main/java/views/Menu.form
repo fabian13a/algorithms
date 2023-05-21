@@ -52,7 +52,7 @@
                           <Component id="close" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jComboBox1" min="-2" pref="221" max="-2" attributes="0"/>
+                          <Component id="items" min="-2" pref="221" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               <Component id="jLabel1" min="-2" pref="164" max="-2" attributes="0"/>
@@ -69,7 +69,7 @@
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                  <Component id="jComboBox1" min="-2" pref="32" max="-2" attributes="0"/>
+                  <Component id="items" min="-2" pref="32" max="-2" attributes="0"/>
                   <EmptySpace pref="131" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="access" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -89,7 +89,7 @@
             <Property name="text" type="java.lang.String" value="Algrithms"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JComboBox" name="jComboBox1">
+        <Component class="javax.swing.JComboBox" name="items">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Calibri" size="14" style="0"/>
