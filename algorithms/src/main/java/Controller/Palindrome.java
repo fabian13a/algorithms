@@ -35,6 +35,5 @@ public class Palindrome {
                 JOptionPane.showMessageDialog(null, "La palabra: "+ texto + ", SI es un palindromo");
         }
 
-     }
-    
+     }        
     }
