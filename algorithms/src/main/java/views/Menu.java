@@ -4,6 +4,8 @@
  */
 package views;
 
+import Controller.Fibonacci;
+import Controller.FizzBuzz;
 import Controller.Palindrome;
 
 /**
@@ -115,6 +117,8 @@ public class Menu extends javax.swing.JFrame {
        switch (type) {
            case "FizzBuzz":
              System.out.println("hola mundo FizzBuzz");
+             FizzBuzz fizz = new FizzBuzz();
+             fizz.FizzBuzzllamar();
            /* this.dispose();
             Moneda mon = new Moneda();
             mon.setVisible(true);
@@ -129,6 +133,14 @@ public class Menu extends javax.swing.JFrame {
                pal.palindromellamar();
                
            break;
+           
+           case "Fibonacci"://falta enlazar
+               System.out.println("hola mundo palindrome");
+               Fibonacci fib = new Fibonacci();
+               fib.Fibonaccillamar();
+               
+           break;
+           
            
        }
     }//GEN-LAST:event_accessActionPerformed

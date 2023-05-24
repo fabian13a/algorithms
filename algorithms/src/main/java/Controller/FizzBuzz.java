@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  */
 public class FizzBuzz {
 
-    public static void FizzBuzz() {
+    public void FizzBuzzllamar() {
         
         int number = Integer.parseInt(JOptionPane.showInputDialog("Ingresa Un numero"));
 
