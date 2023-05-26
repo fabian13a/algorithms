@@ -8,6 +8,9 @@ package Controller;
  *
  * @author fabia
  */
-public class Prueba {
+public class BubbleSort {
+    public void BubbleSortllamar(){
+        System.out.println("♪♪♪");
+    }
     
 }

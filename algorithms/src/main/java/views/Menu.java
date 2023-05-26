@@ -4,6 +4,7 @@
  */
 package views;
 
+import Controller.BubbleSort;
 import Controller.Fibonacci;
 import Controller.FizzBuzz;
 import Controller.Palindrome;
@@ -112,41 +113,50 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void accessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accessActionPerformed
-       String type = items.getSelectedItem().toString();
-        
-       switch (type) {
-           case "FizzBuzz":
-             System.out.println("hola mundo FizzBuzz");
-             FizzBuzz fizz = new FizzBuzz();
-             fizz.FizzBuzzllamar();
-           /* this.dispose();
+        String type = items.getSelectedItem().toString();
+        try{
+        switch (type) {
+            case "FizzBuzz":
+                System.out.println("FizzBuzz");
+                FizzBuzz fizz = new FizzBuzz();
+                fizz.FizzBuzzllamar();
+                /* this.dispose();
             Moneda mon = new Moneda();
             mon.setVisible(true);
             mon.setLocationRelativeTo(null);
             mon.setResizable(false);
             break;*/
-            break;
-            
-           case "Palindrome":
-               System.out.println("hola mundo palindrome");
-               Palindrome pal = new Palindrome();
-               pal.palindromellamar();
-               
-           break;
-           
-           case "Fibonacci"://falta enlazar
-               System.out.println("hola mundo palindrome");
-               Fibonacci fib = new Fibonacci();
-               fib.Fibonaccillamar();
-               
-           break;
-           
-           
-       }
+                break;
+
+            case "Palindrome":
+                System.out.println("Palindrome");
+                Palindrome pal = new Palindrome();
+                pal.palindromellamar();
+
+                break;
+
+            case "Fibonacci":
+                System.out.println("Fibonacci");
+                Fibonacci fib = new Fibonacci();
+                fib.Fibonaccillamar();
+
+                break;
+
+            case "BubbleSort":
+                System.out.println("BubbleSort");
+                BubbleSort buble = new BubbleSort();
+                buble.BubbleSortllamar();
+
+                break;
+
+        }
+        }catch(Exception e){
+            System.out.println("Error " + e);
+        }
     }//GEN-LAST:event_accessActionPerformed
 
     private void closeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeActionPerformed
-       System.exit(0);
+        System.exit(0);
     }//GEN-LAST:event_closeActionPerformed
 
     /**
