@@ -4,6 +4,7 @@
  */
 package views;
 
+import Controller.BinarySearch;
 import Controller.BubbleSort;
 import Controller.Fibonacci;
 import Controller.FizzBuzz;
@@ -45,7 +46,7 @@ public class Menu extends javax.swing.JFrame {
         jLabel1.setText("Algrithms");
 
         items.setFont(new java.awt.Font("Calibri", 0, 14)); // NOI18N
-        items.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FizzBuzz", "Fibonacci", "Palindrome", "BubbleSort" }));
+        items.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "FizzBuzz", "Fibonacci", "Palindrome", "BubbleSort", "BinarySearch" }));
 
         access.setBackground(new java.awt.Color(0, 195, 115));
         access.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
@@ -114,43 +115,49 @@ public class Menu extends javax.swing.JFrame {
 
     private void accessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accessActionPerformed
         String type = items.getSelectedItem().toString();
-        try{
-        switch (type) {
-            case "FizzBuzz":
-                System.out.println("FizzBuzz");
-                FizzBuzz fizz = new FizzBuzz();
-                fizz.FizzBuzzllamar();
-                /* this.dispose();
+        try {
+            switch (type) {
+                case "FizzBuzz":
+                    System.out.println("FizzBuzz");
+                    FizzBuzz fizz = new FizzBuzz();
+                    fizz.FizzBuzzllamar();
+                    /* this.dispose();
             Moneda mon = new Moneda();
             mon.setVisible(true);
             mon.setLocationRelativeTo(null);
             mon.setResizable(false);
             break;*/
-                break;
+                    break;
 
-            case "Palindrome":
-                System.out.println("Palindrome");
-                Palindrome pal = new Palindrome();
-                pal.palindromellamar();
+                case "Palindrome":
+                    System.out.println("Palindrome");
+                    Palindrome pal = new Palindrome();
+                    pal.palindromellamar();
 
-                break;
+                    break;
 
-            case "Fibonacci":
-                System.out.println("Fibonacci");
-                Fibonacci fib = new Fibonacci();
-                fib.Fibonaccillamar();
+                case "Fibonacci":
+                    System.out.println("Fibonacci");
+                    Fibonacci fib = new Fibonacci();
+                    fib.Fibonaccillamar();
 
-                break;
+                    break;
 
-            case "BubbleSort":
-                System.out.println("BubbleSort");
-                BubbleSort buble = new BubbleSort();
-                buble.BubbleSortllamar();
+                case "BubbleSort":
+                    System.out.println("BubbleSort");
+                    BubbleSort buble = new BubbleSort();
+                    buble.BubbleSortllamar();
 
-                break;
+                    break;
 
-        }
-        }catch(Exception e){
+                case "BinarySearch":
+                    BinarySearch bin = new BinarySearch();
+                    bin.Binaryllamar();
+
+                    break;
+
+            }
+        } catch (Exception e) {
             System.out.println("Error " + e);
         }
     }//GEN-LAST:event_accessActionPerformed
